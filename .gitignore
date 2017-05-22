@@ -1,0 +1,14 @@
+reports/*
+.DS_Store
+/tmp
+/log/*.log
+/.idea/*
+/log/*.log
+/doc/*
+/public/assets
+/out
+/spec/out
+/node_modules
+screenshots/
+features_report.html
+features_report.json
