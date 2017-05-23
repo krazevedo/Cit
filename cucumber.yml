@@ -1,6 +1,6 @@
 ##YAML Template
 ---
-default: -p html_report -p poltergeist -p dev
+default: -p html_report -p chrome -p dev
 html_report: --format pretty --format html --out=features_report.html
 chrome: BROWSER=chrome
 poltergeist: BROWSER=poltergeist

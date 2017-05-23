@@ -1,19 +1,3 @@
-
-
-
-# Given(/^i have a login$/) do |table|
-#   @user = table.hashes[0]['username']
-#   @pwd = table.hashes[0]['password']
-# end
-
-# When(/^do login$/) do
-#   login.with(@user, @pwd)
-# end
-
-# Then(/^i see the message$/) do |message|
-#   page.should have_content message
-# end
-
 Given(/^i visit the Ryanair Page$/) do
   home.load
   home.login_button.click
@@ -53,5 +37,5 @@ end
 Then(/^I should get payment declined message$/) do
   payment.payments.wait_for_error_title
   expect(payment.payments.error_title.text).to eq("Oh. There was a problem")
-  expect(payment.payments.error_text.text).to eq("As your payment was not authorised we could not complete your reservation. Please ensure that the information was correct or use a new payment to try again")
+  expect(payment.payments.error_text.text).to eq("As your payment was not authorised we could not complete your reservation. Please ensure that the information was correct or use a new payment to try again")  
 end
