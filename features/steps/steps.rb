@@ -41,8 +41,7 @@ Given(/^Choose seats and fill passengers informations$/) do
   seat.confirm_seats
   extra.checkout
   payment.fill_passengers
-  payment.fill_contact_details  
-  binding.pry
+  payment.fill_contact_details    
 end
 
 When(/^I pay for booking with invalid card$/) do    
