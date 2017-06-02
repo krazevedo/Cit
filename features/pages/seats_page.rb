@@ -16,7 +16,10 @@ module Ryanair
   end  
   module Sections
     class SeatMap < SitePrism::Section
-     elements :standard, 'span.seat-row-seat.standard span'   
+     elements :priority, 'span.seat-row-seat.priority span'    
+     elements :standard, 'span.seat-row-seat.standard span' 
+     elements :onsale, 'span.seat-row-seat.onsale span' 
+     elements :extraleg, 'span.seat-row-seat.extra-leg span'
     end
   end
   module Pages

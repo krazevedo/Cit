@@ -20,7 +20,10 @@ end
 
 Given(/^Choose seats and fill passengers informations$/) do 
   home.letsgo
-  booking.select_flights
+  booking.select_flight_from
+  booking.select_type_from("standard")
+  booking.select_flight_to
+  booking.select_type_to("standard")
   seat.select_seats_from
   seat.select_seats_to
   seat.confirm_seats
