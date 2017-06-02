@@ -51,6 +51,13 @@ module Ryanair
       element :login_button, 'li#myryanair-auth-login'
       $total, $adults, $children, $teens, $infants = 0,0,0,0,0
 
+       def select_departure(departure) 
+        sleep(0.5)
+        flights.from.click
+        flights.from.set(departure) 
+        flights.to.click       
+      end
+
       def select_destination(destination) 
         sleep(0.5)
         flights.to.set(destination)

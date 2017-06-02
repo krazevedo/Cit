@@ -5,6 +5,7 @@ Given(/^i visit the Ryanair Page$/) do
 end
 
 Given(/^I make a booking from "([^"]*)" to "([^"]*)"$/) do |departure, destination|
+  home.select_departure(departure)
   home.select_destination(destination)
   home.continue  
 end
